@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" role="img" aria-label="Margaritto margarini qadog'i">
+  <defs>
+    <linearGradient id="mFront" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffd23f"/>
+      <stop offset="1" stop-color="#f2b705"/>
+    </linearGradient>
+    <linearGradient id="mTop" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffe27a"/>
+      <stop offset="1" stop-color="#fff0b0"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="160" cy="206" rx="128" ry="12" fill="#000" opacity=".08"/>
+  <polygon points="40,92 92,56 292,56 240,92" fill="url(#mTop)"/>
+  <polygon points="240,92 292,56 292,158 240,196" fill="#d69e05"/>
+  <rect x="40" y="92" width="200" height="104" rx="4" fill="url(#mFront)"/>
+  <path d="M40 124 H240 V168 H40 Z" fill="#c8262c"/>
+  <path d="M240 124 L292 88 V130 L240 168 Z" fill="#a51d22"/>
+  <text x="140" y="114" text-anchor="middle" font-family="Manrope, Arial, sans-serif" font-size="10" font-weight="800" letter-spacing="3" fill="#7a4d00">MARGARIN</text>
+  <text x="140" y="154" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="28" font-weight="700" fill="#fff">Margaritto</text>
+  <circle cx="140" cy="182" r="5" fill="#c8262c"/>
+  <path d="M120 182 H132 M148 182 H160" stroke="#c8262c" stroke-width="2" stroke-linecap="round"/>
+  <path d="M112 70 C 140 62, 200 62, 236 70" stroke="#fff" stroke-width="3" fill="none" opacity=".55" stroke-linecap="round"/>
+</svg>

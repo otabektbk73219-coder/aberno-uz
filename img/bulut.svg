@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" role="img" aria-label="Bulut qog'oz mahsulotlari">
+  <defs>
+    <linearGradient id="bRoll" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#dbe7f2"/>
+      <stop offset=".35" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#d3e1ee"/>
+    </linearGradient>
+    <linearGradient id="bBand" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2472b8"/>
+      <stop offset=".4" stop-color="#3d95de"/>
+      <stop offset="1" stop-color="#236cae"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="160" cy="210" rx="118" ry="11" fill="#000" opacity=".08"/>
+  <!-- orqa rulon -->
+  <path d="M176 78 V192 a44 12 0 0 0 88 0 V78 Z" fill="url(#bRoll)"/>
+  <ellipse cx="220" cy="78" rx="44" ry="12" fill="#fff" stroke="#cfdeec" stroke-width="1.5"/>
+  <ellipse cx="220" cy="78" rx="13" ry="4" fill="#b7c9da"/>
+  <!-- old rulon -->
+  <path d="M84 62 V196 a56 15 0 0 0 112 0 V62 Z" fill="url(#bRoll)"/>
+  <path d="M84 112 V162 a56 15 0 0 0 112 0 V112 a56 15 0 0 1 -112 0 Z" fill="url(#bBand)"/>
+  <ellipse cx="140" cy="62" rx="56" ry="15" fill="#fff" stroke="#cfdeec" stroke-width="1.5"/>
+  <ellipse cx="140" cy="62" rx="17" ry="5" fill="#b7c9da"/>
+  <path d="M121 142 a10 10 0 0 1 4 -19 a14 14 0 0 1 26 -2 a10 10 0 0 1 9 17 z" fill="#fff"/>
+  <text x="140" y="158" text-anchor="middle" font-family="Manrope, Arial, sans-serif" font-size="13" font-weight="800" letter-spacing="2" fill="#fff">BULUT</text>
+</svg>
