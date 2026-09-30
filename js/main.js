@@ -6,6 +6,45 @@
 
   document.documentElement.classList.remove("no-js");
 
+  /* ---------- Tema (yorug' / qorong'i) ---------- */
+  // Boshlang'ich tema <head> ichidagi skriptda o'rnatiladi (sahifa "miltillamasligi" uchun).
+  var root = document.documentElement;
+  var themeBtn = document.querySelector(".theme-toggle");
+  var darkQuery = window.matchMedia ? window.matchMedia("(prefers-color-scheme: dark)") : null;
+
+  function storedTheme() {
+    try { return localStorage.getItem("theme"); } catch (e) { return null; }
+  }
+
+  function applyTheme(theme) {
+    root.setAttribute("data-theme", theme);
+    if (themeBtn) {
+      var dark = theme === "dark";
+      themeBtn.setAttribute("aria-pressed", String(dark));
+      themeBtn.setAttribute("aria-label", dark ? "Yorugʻ rejimga oʻtish" : "Qorongʻi rejimga oʻtish");
+      themeBtn.title = dark ? "Yorugʻ rejim" : "Qorongʻi rejim";
+    }
+  }
+
+  applyTheme(root.getAttribute("data-theme") === "dark" ? "dark" : "light");
+
+  if (themeBtn) {
+    themeBtn.addEventListener("click", function () {
+      var next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+      applyTheme(next);
+      try { localStorage.setItem("theme", next); } catch (e) {}
+    });
+  }
+
+  // Foydalanuvchi o'zi tanlamagan bo'lsa, tizim sozlamasiga ergashadi
+  if (darkQuery) {
+    var onSystemChange = function (e) {
+      if (!storedTheme()) applyTheme(e.matches ? "dark" : "light");
+    };
+    if (darkQuery.addEventListener) darkQuery.addEventListener("change", onSystemChange);
+    else if (darkQuery.addListener) darkQuery.addListener(onSystemChange);
+  }
+
   /* ---------- Mobil menyu ---------- */
   var burger = document.querySelector(".burger");
   var nav = document.getElementById("nav");
